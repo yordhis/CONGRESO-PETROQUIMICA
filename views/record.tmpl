@@ -1,0 +1,102 @@
+
+{{ define "record" }}
+
+{{ template "header" }}
+    
+  <!--+++++++++++++++++++++++++++++++++++
+            FORMULARIOA DE REGISTRO 
+        +++++++++++++++++++++++++++++++++++-->
+   
+            <div class="container table-responsive">
+              <form action="/insertRecordPayment" method="post" >
+                <table class="table">
+                  <thead align="center">
+                    <td colspan="4" class="titulo-tabla">INSERTAR REGISTRO Y PAGO</td>
+                  </thead>
+                  <tbody>
+                    <tr class="subtitulo-tabla">
+                      <td>Nombres</td>
+                      <td>Apellidos</td>
+                      <td>Cédula</td>
+                      <td>Edad</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>
+                        <input class="form-control" type="number" name="id_record" maxlength="50" value="" placeholder="ID RECORD" required>
+                        
+                      </td>
+                      <td><input class="form-control" type="number" name="id_payment" maxlength="50" value="" placeholder="ID PAYMENT" required>
+
+                      </td>
+                    </tr>
+                  </tbody>
+
+                  <tfoot>
+                    <tr>
+                      <td colspan="4" align="center">
+                        <button class="col-lg-12 btn btn-success btn-lg">Insert</button>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+
+              </form>
+            </div>
+
+
+
+          <!--DATOS PARA TRANSFERIR-->
+            <div class="col-lg-4 breadcrumb" style="height: 300px;" align="center" id="transferir">
+              <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.8s">
+                <h2>Inscripción Estudiantil</h2>
+                <p style="font-size: 40px;">
+                    10.000,00Bs
+
+                </p>
+              </div>
+            </div>
+
+              <div class="col-lg-4 breadcrumb" style="height: 300px;" align="center" id="transferir">
+                <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.8s">
+                  <h2>Datos para realizar el pago</h2>
+                  <p style="font-size: 20px;">
+                    Banco Mercantil <br>
+                    Cuenta Corriente <br>
+                    N°: 0105-0049-4910-4926-4290 <br>
+                    A nombre: Reunellez <br>
+                    Rif: J-0900-2514-6
+
+                  </p>
+                </div>
+              </div>
+
+                <div class="col-lg-4 breadcrumb" style="height: 300px;" align="center" id="transferir">
+                    <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.8s">
+                      <h2>Inscripción Profesional</h2>
+                      <p style="font-size: 40px;">
+                       20.000,00Bs
+
+                      </p>
+                    </div>  
+      		      </div>
+
+          <!--NORMATIVAS-->
+            <div class="col-lg-6 breadcrumb" >
+              <label>Descarga las normativas del congreso</label>
+              <a href="img/NORMATIVAS.pdf" download> 
+                  <img src="img/normativa.jpg" alt="normativas" style="width: 100px;" >
+              </a>
+            </div>
+
+          <!--TWITTER-->
+
+          <div class="col-lg-6 breadcrumb">
+            <label>Visita nuestro Twitter y mantente informado<br> de todo lo que sucede en el evento</label>
+             <a href="https://twitter.com/CongresoPetroq1" target="_blank"> 
+                <img src="img/t.png" alt="twitter" style="width: 100px;" >
+             </a>
+          </div>
+
+{{ template "footer" }}
+{{ end }}

@@ -54,6 +54,10 @@ var views = template.Must(template.ParseGlob("views/*"))
 	del servidor
 */
 func main() {
+	/*files*/
+	fs := http.FileServer(http.Dir("assets/"))
+	http.Handle("/static/", http.StripPrefix("/static/", fs))
+
 	// directorio raiz /directorio y Function
 	http.HandleFunc("/", Home)
 	http.HandleFunc("/tableRecord", TableRecord)
@@ -69,7 +73,7 @@ func main() {
 	// imprime en una linea
 	log.Println("Servidor corriendo")
 	// escucha el servidor en un puerto
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe("localhost:8080", nil)
 }
 
 /* creamos un prototipo o estrutura de los registros y pagos */

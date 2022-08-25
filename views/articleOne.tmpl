@@ -1,0 +1,138 @@
+{{define "articleOne"}}
+     <div class="content" id="congreso">
+                <h2><span>DESCRIPCIÓN DEL CONGRESO</span></h2>
+                <p style="font-size: 24px;" align="left" >    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El 1er Congreso Nacional de Petroquímica UNELLEZ 2019, con el objetivo de generar espacios de debate y discusión para la apertura del programa de formación de Ingeniería Petroquímica en una filosofía cónsona con la producción de soluciones petroquímicas sustentables en el sector petrolero, tecnológico y agroindustrial que impulsen el desarrollo regional y nacional. </p>
+              </div>
+
+              <div class="content" style="background-image: url('http://localhost:8080/static/img/bannerForm.png'); background-repeat: no-repeat; background-color: white; background-position: center;">
+                <a id="pdf"></a>
+                <form action="/generarCertificado" method="post" class="form-inline">
+                  <img src="http://localhost:8080/static/img/iconCertificado2.png" width="200" height="200" style="">
+                  
+                  <div class="form-group" >
+                      <h2>Generador de Certificados</h2>
+                      <input type="number" name="cedula" placeholder="Ingrese su cédula" class="form-control"> 
+                      <button class="btn btn-primary">Generar</button>  
+                  </div>
+                  
+                </form>
+              </div>
+
+              <div class="container"><br>
+                <!--Folleto del congreso-->
+                    <div class="col-md-7">
+                      <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="">
+                        <img src="http://localhost:8080/static/img/poster.jpg" alt="" class="img-responsive">
+                      </div>
+                    </div>
+            <!--Tabla de actividades del congreso-->
+                <div class="col-md-5">
+                    <table class="table">
+                        <thead>
+                          <tr align="center">
+                            <td colspan="2" class="titulo-tabla">Cronograma</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!--DIA UNO-->
+                          <tr align="center" class="subtitulo-tabla" >
+                            <td>Hora</td>
+                            <td>Martes 05 de Noviembre 2019</td>
+                            
+                          </tr>
+
+                          <tr>
+                            <td>8:00am</td>
+                            <td><b>Acto de Inauguración</b></td>
+                          </tr>
+
+                          <tr>
+                            <td>9:30am</td>
+                            <td><b>Conferencia</b></td>
+                          </tr>
+
+                          <tr>
+                            <td>10:30am</td>
+                            <td><b>Conferencia</b></td>
+                          </tr>
+
+                          <tr>
+                            <td>12:00m</td>
+                            <td><b>Receso</b></td>
+                          </tr>
+
+                          <tr>
+                            <td>2:00pm</td>
+                            <td><b>Conferencia</b></td>
+                          </tr>
+
+                          <tr>
+                            <td>3:00pm</td>
+                            <td><b>Ponencia</b></td>
+                          </tr>
+
+                          <!--DIA DOS-->
+
+                            <tr align="center" class="subtitulo-tabla">
+                              <td>Hora</td>
+                              <td>Miercoles 06 de Noviembre 2019</td>
+                            </tr>
+
+                            <tr>
+                              <td>8:00am</td>
+                              <td><b>Conferencia</b></td>
+                            </tr>
+
+                            <tr>
+                              <td>9:30am</td>
+                              <td><b>Conferencia</b></td>
+                            </tr>
+
+                            <tr>
+                              <td>10:30am</td>
+                              <td><b>Conferencia</b></td>
+                            </tr>
+
+                            <tr>
+                              <td>12:00m</td>
+                              <td><b>Receso</b></td>
+                            </tr>
+
+                            <tr>
+                              <td>2:00pm</td>
+                              <td><b>Conferencia</b></td>
+                            </tr>
+
+
+
+                        </tbody>
+                        <tfoot>
+                          <tr class="titulo-tabla">
+                            <td colspan="2"></td>
+                          </tr>
+                        </tfoot>
+                      
+                    </table>
+                </div>
+
+        <!--NORMATIVAS-->
+
+          <div class="col-lg-5" >
+            <label>Descarga las normativas del congreso</label>
+             <a href="http://localhost:8080/static/img/NORMATIVAS.pdf" download> 
+                <img src="http://localhost:8080/static/img/normativa.jpg" alt="normativas" style="width: 100px;" >
+             </a>
+          </div>
+
+          <!--TWITTER-->
+
+           <div class="col-lg-5">
+            <label>Visita nuestro Twitter y mantente informado<br> de todo lo que sucede en el evento</label>
+             <a href="https://twitter.com/CongresoPetroq1" target="_blank"> 
+                <img src="http://localhost:8080/static/img/t.png" alt="twitter" style="width: 100px;" >
+             </a>
+          </div>
+
+  </div><br>
+
+{{end}}
